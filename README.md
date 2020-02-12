@@ -1,6 +1,7 @@
 # Project Aquila
 Conversation agent prototype fulfillment API
 
+[![Build Status](https://travis-ci.org/kgbph/project-aquila.svg?branch=master)](https://travis-ci.org/kgbph/project-aquila)
 [![License](https://img.shields.io/github/license/kgbph/project-aquila.svg?style=popout)](https://github.com/kgbph/project-aquila/blob/master/LICENSE)
 
 ## Requirements
