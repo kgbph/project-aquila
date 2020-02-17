@@ -2,6 +2,7 @@
 Conversation agent prototype fulfillment API
 
 [![Build Status](https://travis-ci.org/kgbph/project-aquila.svg?branch=master)](https://travis-ci.org/kgbph/project-aquila)
+[![Build Status](https://cloud.drone.io/api/badges/kgbph/project-aquila/status.svg)](https://cloud.drone.io/kgbph/project-aquila)
 [![License](https://img.shields.io/github/license/kgbph/project-aquila.svg?style=popout)](https://github.com/kgbph/project-aquila/blob/master/LICENSE)
 
 ## Requirements

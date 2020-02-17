@@ -1,0 +1,24 @@
+name: default
+kind: pipeline
+type: docker
+
+services:
+  - name: database
+    image: mysql:5.7.28
+    ports:
+      - 3306
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: aquila_test
+
+steps:
+  - name: check
+    image: php:7.4.2-alpine
+    commands:
+      - apk update
+      - apk add --update icu-dev
+      - docker-php-ext-install intl
+      - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+      - composer install --prefer-dist --no-interaction
+      - composer run-script check
+      - composer run-script stan
